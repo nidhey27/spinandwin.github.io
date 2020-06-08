@@ -156,8 +156,8 @@
 		}
 	</style>
 </head>
-<body>
-	
+<body onload="sound()">
+	<audio id="audio" src="WhatsApp Audio 2020-06-08 at 12.25.32 PM.mpeg"></audio>
 	<div id="mainbox" class="mainbox">
 		
 		<div id="box" class="box">
@@ -183,6 +183,11 @@
 
             window.location.href = 'spinning-wheel.html?name='+name;
         }
+		function sound(){
+			var audio = document.getElementById("audio");
+        	audio.play();
+			console.log('Playing')
+		}
     </script>
 	
 

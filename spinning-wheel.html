@@ -169,7 +169,7 @@
 		</div>
 
 		<button class="spin" id="button"  onclick="myfunction()">SPIN</button>
-		 <audio id="audio" src="0218.wav"></audio>
+		 <audio id="audio" src="WhatsApp Audio 2020-06-08 at 4.15.02 PM.wav"></audio>
 		 <br>
 		<h1 style="text-align: center; overflow-y: hidden; color: black;" id="msg"></h1>
 	</div>
@@ -191,8 +191,9 @@ function myfunction(){
 	document.getElementById("button").disabled = true;
 	var audio = document.getElementById("audio");
         audio.play();
+		audio.playbackRate = 1.75;
 
-
+	console.log(audio.duration)
 
 	var x = 1000; //min value
 	var y = 9999; // max value
@@ -206,11 +207,12 @@ function myfunction(){
 		resetbutton();
 		element.classList.add('animate');
 		// console.log(document.getElementById('50').innerText)
-	}, 5000); //5000 = 5 second
+	}, 6000); //5000 = 5 second
 }
 function resetbutton(){
 	document.getElementById('button').innerHTML = "Try Again"
 	document.getElementById("button").disabled = false;
+	
 }
 </script>
 </body>
